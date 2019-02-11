@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Weather</title>
+
+  <!-- Bootstrap CDN -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Resources/style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+      <!-- Grid for navigation-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                    <div class="navbar-header">
+                            <a class="navbar-brand text-white bg-info font-weight-bold pl-md-2 pr-md-2" href="index.html">Latitude</a>
+                          </div>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown active">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Max Temperature</a>
+                            <a class="dropdown-item" href="#">Humidity</a>
+                            <a class="dropdown-item" href="#">Cloudiness</a>
+                            <a class="dropdown-item" href="#">Wind Speed</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                      </ul>
+                    </div>
+        </nav>
+    </div>
+
+    <!-- Grid for content -->
+    <div class="container-fluid bg-secondary">
+        <div class="row">
+            <!--div class="container-fluid" -->
+            <div class="col bg-white mr-4 ml-2 mt-4 mb-4">
+                <div class="container-fluid mt-4 mb-4">
+                    <h3 class="text-info pl-md-4">Comparison: Latitude vs X</h3>
+                    <div class="container-fluid mt-4 mb-4">
+                            <p class="pl-md-4">Click any plot to get in-depth analysis</p>
+                        <a href="maxtemperature.html">
+                            <img src="Resources/assets/images/MaxTemperature.png" class="img-thumbnail border-0" alt="Max Temperature" >
+                        </a>
+                        <a href="humidity.html">
+                                <img src="Resources/assets/images/Humidity.png" class="img-thumbnail border-0"  href="humidity.html" alt="Humidity">
+                        </a>
+                        <a href="cloudiness.html">
+                            <img src="Resources/assets/images/Cloudiness.png" class="img-thumbnail border-0" href="cloudiness.html" alt="Cloudiness">
+                        </a>
+                        <a href="windspeed.html">
+                            <img src="Resources/assets/images/WindSpeed.png" class="img-thumbnail border-0"  href="windspeed.html" alt="Wind Speed">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
